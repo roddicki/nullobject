@@ -83,32 +83,33 @@
 
     <title>Null Object</title>
  	<style>
- 		@font-face {
-		  font-family: latinmodernMath;
-		  src: url(fonts/latinmodern-math.otf);
-		}
+ 		body {
+      background-color: #000000;
+    }
 
-		div {
-		  font-family: latinmodernMath;
-		  font-size: 2rem;
-		  /*border:1px solid black;*/
-		}
+    .null-video {
+      max-width: 700px;
+    }
 
-		.title {
-			background-color: #eceae7;
-			/*background-image: url("logo.png");
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: contain;*/
-		}
  	</style>
 
  	<!-- <script src="/livereload.js"></script> -->
   </head>
   <body>
 
-  	<section>
-	  <div class="container-fluid min-vh-100 d-flex flex-column">
+  <section>
+    <div class="d-flex justify-content-center align-items-center mt-5">
+      <div class="ratio ratio-1x1 null-video" > <!-- Set a width, height will match due to 1x1 -->
+        <video autoplay muted loop playsinline>
+          <source src="img/icon.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div class="m-3"><img src="img/null-object-logo-inline-white-rgb.svg" height="30"></div>
+    </div>
+	 <!--  <div class="container-fluid min-vh-100 d-flex flex-column">
 	    <div class="row flex-grow-1">
 	        <div class="col-md-12 d-flex align-items-center justify-content-center title">
 	        	<div class="m-3"><img src="logo.png" height="150"></div>
@@ -117,7 +118,7 @@
 	            
 	        </div>
 	    </div>
-	</div>
+	</div> -->
 	</section>	
 
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
